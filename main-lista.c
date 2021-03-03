@@ -1,8 +1,8 @@
 #include <stdio.h>
-#include "Lista.h"
+#include "List/List.h"
 
 int main() {
-	Lista* l1 = crearLista();
+	List* l1 = createList();
 
 	for(int i = 0; i < 5; i++) {
 		insertFront(l1,i*3);
@@ -19,7 +19,7 @@ int main() {
 	removeFrom(l1,3);
 
 	printf("Elementos: ");
-	for(int i = 0; i < l1->num_nodos; i++) {
+	for(int i = 0; i < l1->num_nodes; i++) {
 		printf("%d ",getFrom(l1,i));
 	}
 

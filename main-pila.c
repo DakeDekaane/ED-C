@@ -1,18 +1,18 @@
 #include <stdio.h>
-#include "Pila.h"
+#include "Stack/Stack.h"
 
 int main() {
 	
-	Pila* p1 = crearPila();
+	Stack* s1 = createStack();
 
-	push(p1,10);
-	printf("El elemento en el tope de la pila es: %d", tope(p1));
+	push(s1,10);
+	printf("El elemento en el tope de la pila es: %d\n", peek(s1));
 	
-	push(p1,12);
-	printf("El elemento en el tope de la pila es: %d", tope(p1));
+	push(s1,12);
+	printf("El elemento en el tope de la pila es: %d\n", peek(s1));
 
-	int dato = pop(p1);
-	printf("El elemento sacado fue: %d", dato);
-	printf("El elemento en el tope de la pila es: %d", tope(p1));
+	int value = pop(s1);
+	printf("El elemento sacado fue: %d\n", value);
+	printf("El elemento en el tope de la pila es: %d\n", peek(s1));
 
 }

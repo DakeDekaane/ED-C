@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "type_traits": "c",
+        "node.h": "c",
+        "pila.h": "c"
+    }
+}
